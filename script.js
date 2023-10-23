@@ -1,14 +1,14 @@
-function isPowerOfThree(n){
+function isPowerOfFour(n){
     if(n <= 0) return false; //checks if the number is less than 0 or zero
+     // 'n' is not divisible by 4
     while(n > 1){
-        if(n % 3 !== 0){
-            return false; // 'n' is not divisible by 3
+        if(n % 4 !== 0){
+            return false;
         }
-        n /= 3;
-        console.log(n);
+        n /= 4;
     }
-    return true;  //checks if number is one
-
+     //checks if number is one
+    return true;
 }
 
-console.log(isPowerOfThree(20));
+console.log(isPowerOfFour(16));
